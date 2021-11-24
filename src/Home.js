@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Detalles from "./Detalles";
 import Card from "./Card"
 const Home = () => {
   const [Flores, setFlores] = useState([]);
@@ -17,7 +16,7 @@ const Home = () => {
   }, []);
   
   return (
-    <div className="d-flex justify-content-between">
+    <div className="">
       <div className="row m-1">
         <nav className="navbar navbar-light bg-light">
           <div className="container-fluid ">
