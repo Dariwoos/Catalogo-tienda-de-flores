@@ -17,8 +17,8 @@ const Card = (props) => {
                 <h5 className="card-title">{value.name} </h5>
                 <p className="card-text"></p>
                 <Link
-                  to="/detalles/"
-                  state={console.log(value)}
+                  to="/detalles/{value.id} "
+                  state={{ from: value.id }}
                   className="btn btn-primary"
                 >
                   Go somewhere
@@ -35,7 +35,7 @@ const Card = (props) => {
               <h5 className="card-title">{value.name} </h5>
               <p className="card-text"></p>
               <Link
-                to="/detalles/{value.id} "
+                to={`/detalles/${value.id}`}
                 state={{ from: value.id }}
                 className="btn btn-primary"
               >

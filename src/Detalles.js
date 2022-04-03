@@ -21,7 +21,7 @@ console.log(from)
       }, []);
 
 return (
-  <div >
+  <div>
     <div className="row m-1">
       <nav className="navbar navbar-light bg-light">
         <div className="container-fluid ">
